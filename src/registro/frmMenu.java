@@ -27,17 +27,32 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        txtEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 119, -1));
+        txtEliminar.setBackground(new java.awt.Color(50, 37, 168));
+        txtEliminar.setForeground(new java.awt.Color(22, 11, 136));
+        txtEliminar.setText("Eliminar");
+        txtEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEliminarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 119, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEliminarActionPerformed
+        // TODO add your handling code here:
+        
+        
+        
+        
+    }//GEN-LAST:event_txtEliminarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -75,6 +90,6 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton txtEliminar;
     // End of variables declaration//GEN-END:variables
 }
