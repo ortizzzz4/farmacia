@@ -27,33 +27,70 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtEliminar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setIconImages(null);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtEliminar.setBackground(new java.awt.Color(50, 37, 168));
-        txtEliminar.setForeground(new java.awt.Color(22, 11, 136));
-        txtEliminar.setText("Eliminar");
-        txtEliminar.addActionListener(new java.awt.event.ActionListener() {
+        btnEliminar.setBackground(new java.awt.Color(50, 37, 168));
+        btnEliminar.setForeground(new java.awt.Color(22, 11, 136));
+        btnEliminar.setText("Eliminar");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEliminarActionPerformed(evt);
+                btnEliminarActionPerformed(evt);
             }
         });
-        getContentPane().add(txtEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 119, -1));
+        getContentPane().add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 119, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEliminarActionPerformed
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
         
+      /*   eliminarProducto();  */
         
         
-        
-    }//GEN-LAST:event_txtEliminarActionPerformed
+    }//GEN-LAST:event_btnEliminarActionPerformed
 
+   /* private void eliminarProducto() {
+    int filaSeleccionada = tblProductos.getSelectedRow();
+    if (filaSeleccionada >= 0) {
+        DefaultTableModel modelo = (DefaultTableModel) tblProductos.getModel();
+        modelo.removeRow(filaSeleccionada);
+    } else {
+        // No se ha seleccionado ninguna fila, muestra un mensaje de error o realiza alguna otra acción
+        JOptionPane.showMessageDialog(null, "Por favor, seleccione un producto para eliminar.", "Error", JOptionPane.ERROR_MESSAGE);
+    }
+} */
+    
+    private void btnCrearGuardarActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        // TODO add your handling code here:
+      /*  producto = new Producto();
+        producto.setIdProducto(txtCrearIdProducto.getText());
+        producto.setNombre(txtCrearNombreProducto.getText());
+        Tienda.setProductos(producto);
+        agregarProducto(producto); */
+    }                                               
+/*protected void agregarProducto(Producto produc){
+     /*   try{
+            modelo = (DefaultTableModel)tblProductos.getModel();
+            //Se crea un objeto con el número de columnas de la tabla
+            Object[] column = new Object[4];
+            //Se debe llenar cada fila
+            column[0]= producto.getIdProducto();
+            column[1]= producto.getNombre();
+            column[2]= null;
+            column[3]= null;
+            
+            modelo.addRow(column);
+               
+        }catch (Exception e){
+            
+        } 
+    }  
+    
     /**
      * @param args the command line arguments
      */
@@ -90,6 +127,6 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton txtEliminar;
+    private javax.swing.JButton btnEliminar;
     // End of variables declaration//GEN-END:variables
 }
